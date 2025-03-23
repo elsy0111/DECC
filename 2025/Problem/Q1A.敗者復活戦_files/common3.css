@@ -1,0 +1,974 @@
+﻿/* ===================================================================
+CSS information
+ file name  :  common.css
+=================================================================== */
+
+.cl_red{
+	color: #ff007f;
+}
+.area_fl_center{
+	display: flex;
+	justify-content: center;
+
+}
+/*-------共通スタイル-------*/
+#wrapper {
+	background-color: #ffffff;
+	width:100%;
+	font-family: "MeiryoUI", "メイリオ", Meiryo, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "ＭＳ Ｐゴシック", "MS PGothic", "Osaka", sans-serif;
+}
+/* header */
+#header {
+	background-color: #ffffff;
+	width:100%;
+}
+#header_inner {
+	margin: 0px auto 0px;
+    font-size: 12px;
+}
+
+/* contents */
+#contents {
+	background-color: #ffffff;
+	width:100%;
+    margin: auto;
+}
+
+/* main_window */
+#main_window {
+	width: 100%;
+	background: url(../image/main_img3.png) no-repeat center top;
+}
+#main_window .arrow_black {
+	display: block;
+	margin: 0 auto 0;
+}
+/*
+#jump {
+	position:absolute;
+	top: 750px;
+}*/
+
+/* contents_inner */
+.contents_inner {
+	margin-right:auto;
+	margin-left:auto;
+    background-color: #ffffff;
+}
+.contents_inner .title h2, .contents_inner .ex_box h2 {
+    color: #1a49a7;
+	text-align: center;
+    margin: auto;
+	font-weight: bold;
+	line-height: 100%;
+}
+.contents_inner .message, .contents_inner .ex_box {
+    margin: auto;
+	text-align: left;
+}
+.contents_inner .ex_box {
+	background-color: #ccf1ff;
+}
+.contents_inner .guidelines {
+    margin: auto;
+	text-align: center;
+}
+.contents_inner .guidelines h3 {
+	font-weight: bold;
+}
+.contents_inner .howtoanswer {
+    margin: auto;
+	text-align: center;
+}
+.contents_inner .howtoanswer h3 {
+	font-weight: bold;
+}
+
+/* ○数字先頭のリスト */
+dl.circ_list {
+	margin: 5px 0 15px 0;
+	line-height: 1.68;
+}
+dl.circ_list dt {
+    float:left;
+    /*margin-bottom: 0.25em;*/
+}
+dl.circ_list dd {
+    margin-left: 1.25em;
+    /*margin-bottom: 0.25em;*/
+}
+
+.contents_inner .example {
+	color: #1a49a7;
+	text-align: center;
+	border: solid 5px #1a49a7;
+	margin: 0 auto;
+	font-size: 20px;
+	margin-bottom: 35px;
+}
+
+.contents_inner .notice {
+	color: #1a49a7;
+	text-align: center;
+	border: solid 5px #1a49a7;
+	margin: 0 auto;
+	font-size: 20px;
+	margin-bottom: 35px;
+}
+
+.contents_inner .example .download {
+	color: #fff;
+	background-color: #1a49a7;
+	width: 400px;
+	height: 50px;
+	font-size: 16px;
+	line-height:50px;
+	margin: 20px auto 25px;
+	cursor: pointer;
+
+}
+.example a, .example a:link, .example a:active, .example a:visited {
+	display:block;
+}
+.contents_inner .example .email {
+	color:#1a49a7;
+	background-color: #bac8e2;
+	width: 400px;
+	font-size: 16px;
+	line-height:50px;
+	margin: 20px auto 28px;
+	text-align: center;
+}
+.contents_inner .example img.question {
+	margin: 30px 0 20px;
+}
+.contents_inner .example .download img {
+	vertical-align: middle;
+}
+.contents_inner .example .email_title {
+	height: 50px;
+	cursor: pointer;
+}
+#show_email_1, #show_email_2, #show_email_3 {
+	display:none;
+	font-size:20px;
+	line-height: 20px;
+	font-weight: bold;
+	background-color:#bac8e2;
+	height: 35px;
+}
+.email a, .email a:link {
+	color: #1a49a7;
+}
+
+.contents_inner .howtoanswer {
+	font-size: 20px;
+}
+.contents_inner .howtoanswer .howto {
+	border-bottom: solid 1px #717071;
+	width: 372px;
+	margin: 0 auto 20px
+}
+.contents_inner .howtoanswer h3 {
+	line-height: 180%;
+	margin-top: 20px;
+	/*margin: 20px 0 15px;*/
+}
+.contents_inner .howtoanswer p {
+	font-size:20px;
+	font-weight:bold;
+	text-align:left;
+}
+.contents_inner .contact {
+	 margin:auto;
+	 text-align:center;
+	 font-size:16px;
+}
+.contents_inner .contact img.button {
+	margin-top: 20px;
+}
+.hint_remarks{
+  margin: 0 30px;
+}
+
+/* footer */
+#footer {
+	background-color: #7890a4;
+	width:100%;
+	/* margin-top: 340rem; */
+	height: 65px;
+}
+#footer #policy a {
+	display:inline;
+	color: #ffffff;
+	font-size: 12px;
+	line-height: 65px;
+}
+#footer #policy {
+	text-align: right;
+}
+#footer #policy #policy_list {
+	margin-left:auto;
+	margin-right:auto;
+}
+#footer #policy #policy_list li {
+	display: inline;
+}
+
+
+/*PAGE TOP*/
+.pagetop {
+    display: none;
+    position: fixed;
+    bottom: 70px;
+    right: 15px;
+	cursor: pointer;
+}
+.pagetop a {
+    display: block;
+    background-color: #40a5d1;
+    text-align: center;
+    color: #FFF;
+    font-size: 12px;
+	line-height: 20px;
+    text-decoration: none;
+    padding: 10px 10px;
+	/*filter:alpha(opacity=80);
+    -moz-opacity: 0.8;
+    opacity: 0.8;*/
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+.pagetop a:hover {
+    display: block;
+    background-color: #FFF;
+    text-align: center;
+    color: #40a5d1;
+    border: solid 1px #40a5d1;
+    font-size: 12px;
+	line-height: 20px;
+    text-decoration: none;
+    padding:10px 10px;
+	filter:alpha(opacity=0.9);
+    -moz-opacity: 0.9;
+    opacity: 0.9;
+}
+
+/*FAQ*/
+.faq {
+    display: none;
+    position: fixed;
+    top: 68px;
+    right: 15px;
+}
+.faq a {
+    display: block;
+    background-color: #e6b65e;
+    text-align: center;
+    color: #000;
+    font-size: 12px;
+	line-height: 20px;
+    text-decoration: none;
+    padding: 10px 10px;
+	/*filter:alpha(opacity=80);
+    -moz-opacity: 0.8;
+    opacity: 0.8;*/
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+.faq a:hover {
+    display: block;
+    background-color: #FFF;
+    text-align: center;
+    color: #d19e40;
+    border: solid 1px #d19e40;
+    font-size: 12px;
+	line-height: 20px;
+    text-decoration: none;
+    padding:10px 10px;
+	filter:alpha(opacity=0.9);
+    -moz-opacity: 0.9;
+    opacity: 0.9;
+}
+
+.faq_under a {
+    display: block;
+    background-color: #e6b65e;
+    text-align: center;
+    color: #000;
+    font-size: 12px;
+	line-height: 20px;
+    text-decoration: none;
+    padding: 10px 10px;
+	/*filter:alpha(opacity=80);
+    -moz-opacity: 0.8;
+    opacity: 0.8;*/
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+.faq_under a:hover {
+    display: block;
+    background-color: #FFF;
+    text-align: center;
+    color: #d19e40;
+    border: solid 1px #d19e40;
+    font-size: 12px;
+	line-height: 20px;
+    text-decoration: none;
+    padding:10px 10px;
+	filter:alpha(opacity=0.9);
+    -moz-opacity: 0.9;
+    opacity: 0.9;
+}
+
+.blue {
+	color: #1a49a7;
+}
+.blue_b {
+	color: #1e90ff;
+	font-weight: bold;
+}
+.pink {
+	color: #ff007f;
+}
+.black {
+	color: #111111;
+}
+.pink_b {
+	color: #ff007f;
+	font-weight: bold;
+}
+
+/*pcメニュー固定用*/
+#question_menu.fixed {
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+
+@media screen and (min-width: 784px) {
+/* -----------------------------------------------PC用のスタイル記述 */
+.pc {
+	display: block;
+}
+.phone {
+	display: none;
+}
+
+#wrapper {
+	font-size:16px;
+	line-height: 35px;
+}
+#header {
+	height:120px;
+}
+#header_inner {
+	width: 960px;
+	height: 120px;
+}
+#header_inner .logo {
+	padding: 30px 10px 0px 10px;
+}
+#header_inner .title {
+	margin-top: 35px;
+	margin-left: 173px;
+}
+#header_inner .procon_logo {
+	padding: 25px 10px 0px 10px;
+}
+
+#pc_menu {
+	width: 100%;
+	height: 65px;
+	background-color: #1a49a7;
+	z-index: 10;
+}
+
+#pc_menu_inner {
+	width: 1020px;
+	height: 65px;
+	margin: 0 auto;
+}
+#menu_item{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+}
+#menu_item li{
+	height: auto;
+	border-left: 1px #FFF solid;
+	/*text-align: center;*/
+	line-height: 1.1;
+	font-size: 18px;
+	font-weight: bold;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+#menu_item li:last-child{
+	border-right: 1px #FFF solid;
+	padding-right: 20px;
+}
+
+#main_window {
+	height: 672px;
+}
+#main_window .arrow_black {
+	padding-top: 627px;
+}
+
+.contents_inner {
+	width:800px;
+}
+.contents_inner .title {
+	padding: 70px 0 20px;
+}
+.contents_inner .title h2{
+    font-size: 26px;
+}
+.contents_inner .title .sub {
+	font-size: 20px;
+}
+.contents_inner .message {
+	width: 700px;
+}
+.contents_inner .imgphoto_1 {
+	width: 210px;
+	height: 140px;
+	float: left;
+}
+.contents_inner .imgphoto_2 {
+	width: 210px;
+	height: 140px;
+	float: left;
+	margin-left: 15px;
+}
+.contents_inner .imgphoto_3 {
+	width: 250px;
+	height: 140px;
+	float: left;
+	margin-left: 15px;
+	line-height:100%;
+	text-align: center;
+}
+.contents_inner .ex_box {
+	width: 620px;
+	margin-top: 70px;
+	padding: 30px 40px 30px;
+}
+.contents_inner .ex_box h2 {
+    font-size: 26px;
+	margin-bottom: 10px;
+}
+.contents_inner .guidelines {
+	width: 615px;
+	font-size: 20px;
+}
+.contents_inner .guidelines h3 {
+	line-height: 180%;
+	margin-top: 20px;
+	/*margin: 20px 0 15px;*/
+}
+.contents_inner #map_canvas {
+	margin-top: 35px;
+	width:615px;
+	height:395px;
+}
+.contents_inner .guidelines img.button {
+	margin: 45px 0 20px;
+}
+.contents_inner .guidelines img.prize {
+	margin-bottom: 60px;
+}
+.contents_inner .schedule {
+	font-size: 20px;
+	line-height: 110%;
+	margin-bottom: 25px;
+}
+.contents_inner .schedule .time {
+	font-weight: bold;
+}
+.contents_inner .schedule .term {
+	margin: 5px 0;
+}
+.contents_inner .schedule .arrow {
+	margin-bottom: 10px;
+}
+
+/*
+.contents_inner .howtoanswer {
+	width: 700px;
+	height: 500px;
+}
+*/
+
+.contents_inner .example {
+	/*width: 690px;*/
+	width: 800px;
+}
+.contents_inner .example .q3_img {
+	margin-top: 30px;
+	padding-bottom: 20px;
+}
+.contents_inner .example .q3_img1 {
+	float: right;
+	margin-right: 55px;
+	padding-top: 25px;
+}
+.contents_inner .example .q3_img2 {
+	float: left;
+	margin-left: 55px;
+}
+.mono_space{/*等間隔にしたい場合*/
+	font-family: Consolas;
+	font-size:25px;
+}
+.side_img{/*左寄*/
+  float: left;
+  font-size: 17px;
+  line-height: 1.1;
+  margin: 0 10px;
+  letter-spacing: 2px;
+}
+#footer {
+	height: 65px;
+}
+#footer #policy a {
+	font-size: 12px;
+	line-height: 65px;
+}
+#footer #policy #policy_list {
+	width: 800px;
+}
+
+}
+
+/*@media screen and (max-width: 783px) {*/
+/* -------------------------------------------タブレット用のスタイル記述 */
+/*
+.pc {
+	display: block;
+}
+.phone {
+	display: none;
+}
+img, object, embed {
+	max-width: 100%;
+	height: auto;
+}
+img {
+	-ms-interpolation-mode: bicubic;
+}
+#wrapper {
+	max-width: 768px;
+	font-size:16px;
+	line-height: 35px;
+}
+#header {
+	height:120px;
+}
+#header_inner {
+	width: 768px;
+	height: 120px;
+}
+#header_inner .logo {
+	padding: 30px 10px 0px 10px;
+}
+#header_inner .title {
+	margin-top: 35px;
+	margin-left: 70px;
+}
+#header_inner .procon_logo {
+	padding: 25px 10px 0px 10px;
+}
+
+#pc_menu {
+	width: 100%;
+	height: 65px;
+	background-color: #1a49a7;
+	z-index: 10;
+}
+#pc_menu_inner {
+	width: 739px;
+	margin: 0px auto 0px;
+	height: 65px;
+	padding-top: 10px;
+}
+#pc_menu_inner #menu_item .click_area {
+	height: 45px;
+	text-align: center;
+	float: left;
+}
+#pc_menu_inner #menu_item .wline {
+	height: 45px;
+	width: 1px;
+	background-color: #fff;
+	float: left;
+}
+#menu_item .menu_1 {
+	width: 180px;
+}
+#menu_item .menu_2 {
+	width: 108px;
+}
+#menu_item .menu_3 {
+	width: 81px;
+}
+#menu_item .menu_4 {
+	width: 108px;
+}
+#menu_item .menu_5 {
+	width: 147px;
+}
+#menu_item .menu_6 {
+	width: 108px;
+}
+
+#main_window {
+	height: 672px;
+}
+#main_window .arrow_black {
+	padding-top: 627px;
+}
+.contents_inner {
+	width:615px;
+}
+.contents_inner .title {
+	padding: 50px 0 20px 0;
+}
+.contents_inner .title h2{
+    font-size: 26px;
+}
+.contents_inner .title .sub {
+	font-size: 20px;
+}
+
+.contents_inner .imgphoto_1 {
+	width: 185px;
+	height: auto;
+	float: left;
+}
+.contents_inner .imgphoto_2 {
+	width: 185px;
+	height: auto;
+	float: left;
+	margin-left: 12px;
+}
+.contents_inner .imgphoto_3 {
+	width: 220px;
+	height: auto;
+	float: left;
+	margin-left: 12px;
+	line-height: 100%;
+	text-align: center;
+}
+.contents_inner .ex_box {
+	width: 555px;
+	margin-top: 50px;
+	padding: 30px 30px 30px;
+}
+.contents_inner .ex_box h2 {
+    font-size: 26px;
+	margin-bottom: 10px;
+}
+
+.contents_inner .guidelines {
+	width: 615px;
+	font-size: 20px;
+}
+.contents_inner .guidelines h3 {
+	line-height: 180%;
+	margin-top: 20px;
+	/*margin: 20px 0 15px;
+}
+.contents_inner #map_canvas {
+	margin-top: 35px;
+	width:615px;
+	height:395px;
+}
+.contents_inner .guidelines img.button {
+	margin: 45px 0 20px;
+}
+.contents_inner .guidelines img.prize {
+	margin-bottom: 60px;
+}
+.contents_inner .schedule {
+	font-size: 20px;
+	line-height: 110%;
+	margin-bottom: 25px;
+}
+.contents_inner .schedule .time {
+	font-weight: bold;
+}
+.contents_inner .schedule .term {
+	margin: 5px 0;
+}
+.contents_inner .schedule .arrow {
+	margin-bottom: 10px;
+}
+
+.contents_inner .howtoanswer {
+	width: 615px;
+}
+.contents_inner .example {
+	/*width: 605px;
+	width: 700px;
+}
+.contents_inner .example .q3_img {
+	margin-top: 30px;
+	padding-bottom: 20px;
+}
+.contents_inner .example .q3_img1 {
+	float: right;
+	margin-right: 20px;
+	padding-top: 25px;
+}
+.contents_inner .example .q3_img2 {
+	float: left;
+	margin-left: 20px;
+}
+
+.mono_space{
+	font-family: Consolas;
+	font-size:25px;
+}
+.side_img{
+  float: left;
+  font-size: 17px;
+  line-height: 1.1;
+  margin: 0 10px;
+  letter-spacing: 2px;
+}
+#footer {
+	height: 65px;
+}
+#footer #policy a {
+	font-size: 12px;
+	line-height: 65px;
+}
+#footer #policy #policy_list {
+	width: 615px;
+}
+
+}
+*/
+
+@media screen and (max-width: 783px) {
+/*@media screen and (max-width: 655px) {*/
+/* -------------------------------------------スマートフォン用のスタイル記述 */
+.pc {
+	display: none;
+}
+.phone {
+	display: block;
+}
+img, object, embed {
+	max-width: 100%;
+	height: auto;
+}
+img {
+	-ms-interpolation-mode: bicubic;
+}
+
+#wrapper {
+	font-size:14px;
+	line-height: 210%;
+	min-width:320px;
+}
+#header {
+	width: 100%;
+	height:120px;
+}
+#header_inner {
+	width: 100%;
+	height:120px;
+}
+#header_inner .logo {
+	padding: 20px 10px 0;
+}
+#header_inner .title {
+	width: 100%;
+	text-align: center;
+	margin-bottom: 0 0 10px;
+	margin-left:0px;
+}
+#header_inner .procon_logo {
+	padding: 10px 10px 0 10px;
+}
+
+#main_window {
+	width: 100%;
+	height: 400px;
+	margin-bottom: 0px;
+	background-size: 600px auto;
+}
+#main_window .arrow_black {
+	padding-top: 350px;
+	width: 50px;
+}
+#jump {
+	position:absolute;
+	top: 520px;
+}
+
+.contents_inner {
+	width:90%;
+
+}
+.contents_inner .title {
+	padding: 30px 0 10px;
+}
+.contents_inner .title h2 {
+    width: 95%;
+    font-size: 24px;
+}
+.contents_inner .title .sub {
+	font-size: 16px;
+}
+.contents_inner .imgphoto_1, .contents_inner .imgphoto_2, .contents_inner .imgphoto_3 {
+	width: auto;
+	height: 140px;
+	float: none;
+	margin: 10px auto;
+	line-height:100%;
+	text-align: center;
+}
+.contents_inner .ex_box {
+	width: 90%;
+	margin-top: 30px;
+	padding: 20px;
+}
+.contents_inner .ex_box h2 {
+    font-size: 20px;
+	margin: 10px;
+}
+
+.contents_inner .guidelines {
+	width: 90%;
+	font-size: 16px;
+}
+.contents_inner .guidelines h3 {
+	line-height: 180%;
+	margin-top: 20px;
+	/*margin: 20px 0 15px;*/
+}
+.contents_inner #map_canvas {
+	margin-top: 20px;
+	width: 100%;
+	height: 250px;
+}
+.contents_inner .guidelines img.button {
+	margin: 20px 0 0;
+}
+.contents_inner .guidelines img.prize {
+	margin-bottom: 30px;
+}
+.contents_inner .prize_w {
+	width: 70%;
+}
+.contents_inner .schedule {
+	font-size: 20px;
+	line-height: 110%;
+	margin-bottom: 25px;
+}
+.contents_inner .schedule .time {
+	font-weight: bold;
+}
+.contents_inner .schedule .term {
+	margin: 5px 0;
+}
+.contents_inner .schedule .arrow {
+	margin-bottom: 10px;
+}
+
+.contents_inner .example {
+	width: 90%;
+	font-size: 16px;
+	margin-bottom: 35px;
+}
+.contents_inner .example img.question {
+	width: 60px;
+	margin: 20px 0 10px;
+}
+.contents_inner .example .download {
+	width: 85%;
+	height: 60px;
+	font-size: 14px;
+	margin: 15px auto 15px;
+	line-height: 20px;
+	padding-top: 10px;
+}
+.contents_inner .example .email {
+	width: 85%;
+	font-size: 14px;
+	margin: 15px auto 20px;
+}
+#show_email_1, #show_email_2, #show_email_3 {
+	font-size:16px;
+	line-height: 16px;
+}
+.contents_inner .example .q3_img {
+	margin-top: 10px;
+	padding-bottom: 10px;
+}
+.contents_inner .example .q3_img1 {
+	float: none;
+	margin-right: 0px;
+	padding-top: 0px;
+	max-width: 90%;
+}
+.contents_inner .example .q3_img2 {
+	float: none;
+	margin-left: 0px;
+	margin-top: 15px;
+	max-width: 90%;
+}
+
+.contents_inner .howtoanswer {
+	width: 100%;
+	font-size: 18px;
+}
+.contents_inner .howtoanswer .howto {
+	border-bottom: solid 1px #717071;
+	width: 80%;
+	margin: 0 auto 15px
+}
+.contents_inner .howtoanswer h3 {
+	line-height: 180%;
+	margin-top: 15px;
+}
+.contents_inner .howtoanswer p {
+	font-size:18px;
+	font-weight:bold;
+	text-align:left;
+}
+
+
+
+
+/*PAGE TOP*/
+.pagetop {
+    bottom: 50px;
+    right: 10px;
+}
+
+#footer {
+	margin-top: 50px;
+	height: 70px;
+}
+#footer #policy {
+	text-align: center;
+}
+#footer #policy a {
+	font-size: 10px;
+	line-height: 70px;
+}
+#footer #policy #policy_list {
+	width: 95%;
+}
+
+
+}

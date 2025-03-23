@@ -1,0 +1,226 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+
+#question_menu {
+	width: 100%;
+	height: 65px;
+	background-color:#7890a4;	
+/*
+	background:linear-gradient(to left, rgba(255, 242, 102, 1),rgba(91, 187, 119, 1),rgba(64, 175, 229, 1),rgba(64, 162, 214, 1),rgba(64, 175, 229, 1),rgba(91, 187, 119, 1),rgba(255, 242, 102, 1));
+	background:-webkit-linear-gradient(left, rgba(255, 242, 102, 1),rgba(91, 187, 119, 1),rgba(64, 175, 229, 1),rgba(64, 162, 214, 1),rgba(64, 175, 229, 1),rgba(91, 187, 119, 1),rgba(255, 242, 102, 1));
+	background:-mozlinear-gradient(left, rgba(255, 242, 102, 1),rgba(91, 187, 119, 1),rgba(64, 175, 229, 1),rgba(64, 162, 214, 1),rgba(64, 175, 229, 1),rgba(91, 187, 119, 1),rgba(255, 242, 102, 1));
+	background:-ms-linear-gradient(left, rgba(255, 242, 102, 1),rgba(91, 187, 119, 1),rgba(64, 175, 229, 1),rgba(64, 162, 214, 1),rgba(64, 175, 229, 1),rgba(91, 187, 119, 1),rgba(255, 242, 102, 1));
+*/
+	z-index: 10;
+	/*position: absolute;*/
+	position: sticky;
+	top: 0px;
+}
+#menu_item .click_area{
+	/*width: 19.8%;*/
+	color: #FFFFFF;
+}
+
+
+
+div.click_area:hover{
+	position: relative;
+/*	border-bottom: medium solid #FFFFFF;*/
+}
+
+.click_area:after {
+	content: '';
+	width: 0;
+	transition: all 0.3s ease;
+	border-bottom: 3px solid #FFFFFF;
+	display: block;
+}
+.click_area:hover:after {
+	width: 100%;
+	border-bottom: 3px solid #FFFFFF;
+	
+}
+
+
+
+.click_area img{
+	padding-top: 7px;
+}
+.jump_spot{
+	padding-top: 120px;
+}
+#show_email_4, #show_email_5 {
+	display:none;
+	font-size:20px;
+	line-height: 20px;
+	font-weight: bold;
+	background-color:#bac8e2;
+	height: 35px;
+}
+
+.que_and_eg{
+	margin: 0 30px;
+	text-align: left;
+}
+
+.eg{
+	text-align: center;
+	color: #000000;
+	margin-bottom: 50px;
+}
+.eg_box{
+	border: 1px solid #000000;
+	text-align: left;
+	padding: 20px 20px;
+	 word-break: break-word;
+	margin:  0 30px;
+}
+.eg_box dt{
+	font-weight: bold;
+	margin-top: 10px;
+	
+}
+.eg_box dt:nth-child(1){
+	margin-top: 0px;
+}
+.eg_box img{
+	display: block;
+	/*margin: auto;*/
+}
+
+.que5_eg figcaption{
+	text-align: right;
+	padding-right: 120px;
+}
+figure.que5_eg {
+	text-align: center;
+}
+
+
+.piece{
+	display: table;
+	width: 100%;
+	
+}
+
+figure.que5_piece {
+    display: table-cell;
+    text-align: center;
+    vertical-align: top;	
+	height: 130px;
+	width: 33.33%;
+	
+	
+}
+
+.que5_piece img {
+  display: block;
+  padding: 15px 0;
+	margin: 0 auto;
+	
+    
+}
+
+
+
+/* ▼画像に対する装飾 */
+figure img {
+    display: block;          /* 余計な余白が出ないようにする */
+    margin: 0px 0px 3px 0px; /* 下側にだけ3pxの余白を追加 */
+}
+/* ▼キャプションに対する装飾 */
+figcaption {
+    text-align: center;      /* 中身をセンタリング */
+}
+
+.answer_box{
+	border-top: #1a49a7 3px solid;
+  margin-top: 50px;
+	padding: 20px 0 0;
+}
+.answer_disp{
+	background-color: #DFDFDF;
+	border: 2px dotted #BEBEBE;
+	padding: 20px 0;
+	color: #AAAAAA;
+	width:400px;
+	margin: auto;
+	text-align: center;
+	height:150px;
+}
+.answer_block{
+	margin-bottom: 30px;
+}
+
+.hints {
+	margin: 20px 30px;
+  background: #fffcf4;
+  border-radius :8px;/*角の丸み*/
+  box-shadow :0px 0px 5px silver;/*5px=影の広がり具合*/
+  padding: 0.5em 0.5em 0.5em 2em;
+	text-align: left;
+}
+.hints li{
+	list-style-type:disc;
+}
+.list_question{
+	margin: 0;
+	margin-bottom: 1em;
+  padding: 0 1.0em;
+	text-align: left;
+}
+.list_question li{
+	list-style-type:disc;
+}
+.child_list{
+	  margin: 0.3em 1em 0.7em;
+    font-size: 80%;
+    line-height: 1.7em;
+}
+.child_list li{
+	list-style-type:circle;
+}
+
+.hints_img{
+	color: #000;
+	margin: 30px auto;
+}
+
+.drag-drop-area{
+	    border: 1px dotted #BEBEBE;
+    padding: 30px 0 0 0;
+    font-size: 90%;
+    color: #AAAAAA;
+    background-color: #DFDFDF;
+	width: 100%;
+}
+
+@media screen and (max-width: 783px) {
+/* -------------------------------------------タブレット用のスタイル記述 */
+.que5_eg figcaption{
+	padding-right: 0px;
+}
+
+	
+}
+
+@media screen and (max-width: 655px) {
+/* -------------------------------------------スマートフォン用のスタイル記述 */
+	#show_email_4, #show_email_5 {
+	font-size:16px;
+	line-height: 16px;
+}
+	.que_and_eg{
+	margin: 0 20px;
+	text-align: left;
+}
+.eg_box{
+	padding: 10px;
+}	
+	
+.que5_eg figcaption{
+	padding-right: 0px;
+}	
+	
+}

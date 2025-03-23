@@ -1,0 +1,49 @@
+﻿@charset "utf-8";
+
+.toast {
+	visibility: hidden;
+	position: fixed;
+	z-index: 999;
+	top: 80px;
+	height: 60px;
+	width: 300px;
+	border-radius: 3px;
+	background-color: #d4edda;
+}
+
+.toast > p{
+	margin: 22px 0;
+	margin-left: 30px;
+	font-size: 14px;
+	vertical-align: center;
+}
+
+.notice {
+	visibility: hidden;
+	position: fixed;
+	z-index: 999;
+	top: 140px;
+	right: 15px;
+	height: 50px;
+	width: 120px;
+	border-radius: 3px;
+	background-color: #ccffff;
+	text-align: right;
+	padding-right: 10px;
+}
+
+.notice > div{
+	line-height: 25px;
+	font-size: 14px;
+	vertical-align: center;
+}
+
+.notice::before{
+	content: "";
+	position: absolute;
+	border: 10px solid transparent;
+	border-bottom: 20px solid #ccffff;
+	bottom: 100%;
+	right: 15px;
+}
+

@@ -1,0 +1,33 @@
+fieldset.procon {
+	background-color:#FFF;
+	border-color: #6495ed;
+	/*max-width:400px;*/
+	/*padding-top:10px;
+	padding-left:20px;
+	margin-top: 20px;
+	margin-bottom: 40px;*/
+	margin: 20px 30px ;
+}
+fieldset.login {
+	background-color:#FFF;
+	border-color: #fff;
+	max-width:300px;
+	padding-top:10px;
+	padding-left:20px;
+	margin-top: 20px;
+	margin-bottom: 40px;
+}
+fieldset.procon textarea {
+	width: 100%;
+	padding-left:2px;
+}
+fieldset.procon input {
+	width: 100%;
+	padding-left:1px;
+}
+legend.procon {
+	background-color: #6495ed;
+	padding: 5px 10px;
+	border-radius: 5px;
+	color: #ffffff;
+}

@@ -1,0 +1,31 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*@page { size: A4 landscape} /* A4横 */
+@page {
+  size: A4;
+}
+
+body {
+  zoom: 0.92;
+
+}
+
+.que_and_eg img{
+  width: 100%;
+}
+img.wd_auto{
+  width: auto;
+}
+
+#header, #example, #question_menu , .no_print ,.pagetop, #footer{
+  display: none;
+}
+
+.jump_spot{
+  padding-top: 0;
+}
+
+.page-break{
+  page-break-before: always;
+}
